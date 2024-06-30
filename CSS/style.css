@@ -1,0 +1,731 @@
+/* *************************** Google Fonts ****************************** */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700;1,900&display=swap");
+
+/* Primary Elements */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  transition: all 0.2s linear;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 56.5%;
+}
+
+:root {
+  --dark-color: #000;
+  --light-dark-color: #2c2c2c;
+  --background: #ffc400;
+  --light-color: #fff;
+}
+
+span {
+  color: var(--background);
+}
+
+li {
+  list-style: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+p {
+  font-weight: 500;
+  color: var(--light-dark-color);
+}
+
+center {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--dark-color);
+  margin-top: 2rem;
+}
+
+/* ================== Navigation Section Start =================== */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10% !important;
+  z-index: 100;
+}
+
+/* Sticky Navbar */
+header.sticky {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  padding: 20px 5% !important;
+  background: var(--light-color);
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--dark-color);
+  position: relative;
+  text-align: center;
+}
+
+.navmenu {
+  display: flex;
+  position: relative;
+}
+
+.navmenu li {
+  margin: 0 15px;
+  position: relative;
+}
+
+.navmenu li a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--dark-color);
+  position: relative;
+}
+
+.navmenu li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  display: block;
+  background: var(--background);
+  transition: 0.2s linear;
+}
+
+.navmenu li a:hover::after {
+  width: 100%;
+}
+
+/* **** Login Section */
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3rem;
+  position: relative;
+}
+
+.login i {
+  font-size: 1.4rem;
+  color: var(--dark-color);
+  cursor: pointer;
+  position: relative;
+}
+
+.login i:hover {
+  color: var(--background);
+}
+
+.login a {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--dark-color);
+  position: relative;
+}
+
+.login a:hover {
+  color: var(--background);
+}
+
+.login-1 {
+  display: none;
+}
+
+.login-1 i {
+  font-size: 1.4rem;
+  color: var(--dark-color);
+  cursor: pointer;
+  position: relative;
+}
+
+.login-1 i:hover {
+  color: var(--background);
+}
+
+.login-1 a {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--dark-color);
+  position: relative;
+}
+
+.login-1 a:hover {
+  color: var(--background);
+}
+/* Hamburger Section */
+.hamburger {
+  font-size: 2.2rem;
+  color: var(--dark-color);
+  cursor: pointer;
+  display: none !important;
+}
+/* ================== Navigation Section End =================== */
+
+/* ==================== Hero Section Start ====================== */
+.hero-section {
+  width: 100% !important;
+  position: relative;
+}
+
+.carousel-item {
+  height: 110vh !important;
+  position: relative;
+  width: 100% !important;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/banner-bg.png);
+}
+
+.hero-info {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hero-info h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.hero-info p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--dark-color);
+  margin-bottom: 7rem;
+}
+
+.hero-info a {
+  padding: 15px 50px;
+  background: var(--dark-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--light-color);
+  box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.3);
+}
+
+.hero-info a:hover {
+  background: var(--background);
+  color: var(--dark-color);
+}
+/* ==================== Hero Section End ====================== */
+
+/* ======================= Service Section Start ========================== */
+.service-container {
+  /* box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.3); */
+  font-size: medium;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.service-box {
+  margin: auto !important;
+}
+
+.service-container img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.service-container h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--dark-color);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.service-container p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--light-dark-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.service-container a {
+  padding: 15px 40px;
+  background: var(--background);
+  color: var(--light-color);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.service-container a:hover {
+  background: var(--dark-color);
+  color: var(--light-color);
+}
+/* ======================= Service Section End ========================== */
+
+/* =========================== About Section Start ======================== */
+.about {
+  padding: 20px 10px;
+  margin-top: 100px;
+  width: 100%;
+  height: auto;
+  background: var(--background);
+}
+
+.about-box h1 {
+  font-size: 2.7rem;
+  font-weight: 500;
+  color: var(--light-color);
+  margin-bottom: 5rem;
+}
+
+.about-box p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--light-color);
+  margin-bottom: 5rem;
+}
+
+.about-box a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--light-color);
+  background: var(--dark-color);
+  padding: 15px 50px;
+}
+
+.about-box a:hover {
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+.about-box img {
+  max-width: 100%;
+  height: auto;
+}
+/* =========================== About Section End ======================== */
+
+/* ====================== Shop Section Start ===================== */
+/* .shop-container {
+  width: 90% !important;
+  margin: auto !important;
+} */
+
+.shop-box {
+  width: 100%;
+  padding: 0 1rem;
+}
+.shop-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.shop-img {
+  position: relative;
+}
+
+.shop-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.layout {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.2));
+  opacity: 0;
+}
+
+.shop-img:hover .layout {
+  opacity: 1;
+}
+
+.layout a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--light-color);
+  padding: 14px 60px;
+  background: var(--background);
+}
+
+.layout a:hover {
+  background: var(--light-color);
+  color: var(--dark-color);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.shop-cont h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--background);
+}
+
+.shop-cont p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--light-dark-color);
+}
+/* ====================== Shop Section End ===================== */
+
+/* ==== Banner Section Start ==== */
+.banner-section {
+  width: 100%;
+  height: 80vh;
+  background: url(../images/bg-1.png);
+  float: left;
+  padding-bottom: 80px;
+  position: relative;
+  background-attachment: fixed;
+  margin-top: 40px !important;
+  margin-bottom: 100px !important;
+}
+
+.banner-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 10px;
+  height: 70vh;
+}
+
+.banner-box h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--light-color);
+  margin-bottom: 1rem;
+}
+
+.banner-box h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--dark-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.banner-box p {
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #eee;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.banner-box a {
+  padding: 15px 40px;
+  background: var(--dark-color);
+  color: var(--light-color);
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);
+}
+
+.banner-box a:hover {
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+/* ==== Banner Section End ==== */
+
+/* ************ Projects Section Start *************** */
+.projects-cont {
+  padding-top: 100px;
+}
+.projects-cont p {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--light-dark-color);
+}
+
+.project-cont {
+  padding-top: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.project-box {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 10px;
+  margin: auto;
+  position: relative
+}
+
+.project-img {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  height: 400px;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.project-img:hover .layout {
+  opacity: 1;
+}
+/* ************ Projects Section End *************** */
+
+/* ******************** Testimonial Review Start **************** */
+.review {
+  padding-top: 100px;
+}
+
+.review-container {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  padding: 50px;
+  position: relative;
+  margin-top: 80px !important;
+}
+
+.review-cont {
+  text-align: center;
+  background: var(--background);
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.review-img {
+  max-width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: -50px;
+}
+
+.review-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.user-name {
+  font-size: 1.7rem;
+}
+.review-cont h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--light-color);
+}
+
+.review-cont p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--light-dark-color);
+}
+
+.social-handles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.social-handles li i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--dark-color);
+  font-size: 1.4rem;
+  color: var(--light-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px;
+}
+
+.social-handles li i:hover {
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+/* ******************** Testimonial Review End **************** */
+
+/* =================== Contact Section Start ==================== */
+.contact-section {
+  max-width: 100%;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/contact-bg.png);
+  margin-top: 100px;
+}
+
+.contact-container {
+  max-width: 600px;
+  height: auto;
+  /* border: 1px solid #111; */
+}
+
+label {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--light-color);
+}
+
+.form {
+  margin-top: 1.5rem;
+  max-width: 600px;
+}
+
+.form form {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.form form input {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--dark-color);
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+::placeholder {
+  font-size: 15px;
+  font-weight: 500;
+  color: #888;
+}
+
+textarea {
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+.btn-1 {
+  padding: 13px 30px;
+  width: 200px;
+  background: var(--dark-color);
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--light-color);
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+.btn-1:hover {
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+.map {
+  max-width: auto;
+  width: 100%;
+  height: 600px;
+  border-radius: 5px;
+}
+/* =================== Contact Section End ==================== */
+
+/* ==================== Footer Section Start ==================== */
+.footer {
+  padding: 50px 5% !important;
+  width: 100%;
+  height: auto;
+  background: var(--light-dark-color);
+}
+
+.footer .footer-head {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--light-color);
+  margin-bottom: 1rem;
+}
+
+.footer p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #eee;
+}
+
+.footer-box li {
+  margin: 10px 0;
+}
+
+.footer-box li a {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--light-color);
+}
+
+.footer-box li a:hover {
+  color: var(--background);
+}
+
+.subscribe {
+  max-width: 600px;
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  border: 1px solid#fff;
+  display: flex;
+  align-items: center;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.subscribe input {
+  width: 80%;
+  height: 100%;
+  background: transparent;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--light-color);
+  padding-left: 5px;
+}
+
+.btn-2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--light-color);
+  height: 50px;
+  width: 150px;
+  border-radius: 5px;
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+.btn-2:hover {
+  background: var(--background);
+  color: var(--light-color);
+}
+/* ==================== Footer Section End ==================== */
